@@ -276,7 +276,7 @@
 }
 .benefits {
   padding: 3rem 0;
-  background-image: url("./assets/imagenes/background_benefits.jpg");
+  background-image: url("../imagenes/background_benefits.jpg");
   position: relative;
   &::before {
     content: "";
@@ -347,22 +347,22 @@
         background-size: 120%;
       }
       &.career-1 {
-        background-image: url("./assets/imagenes/image_category_administration.jpg");
+        background-image: url("../imagenes/image_category_administration.jpg");
       }
       &.career-2 {
-        background-image: url("./assets/imagenes/image_category_accounting.jpg");
+        background-image: url("../imagenes/image_category_accounting.jpg");
       }
       &.career-3 {
-        background-image: url("./assets/imagenes/image_category_architecture.jpg");
+        background-image: url("../imagenes/image_category_architecture.jpg");
       }
       &.career-4 {
-        background-image: url("./assets/imagenes/image_category_mathematics.jpg");
+        background-image: url("../imagenes/image_category_mathematics.jpg");
       }
       &.career-5 {
-        background-image: url("./assets/imagenes/image_category_programming.jpg");
+        background-image: url("../imagenes/image_category_programming.jpg");
       }
       &.career-6 {
-        background-image: url("./assets/imagenes/image_category_biology.jpg");
+        background-image: url("../imagenes/image_category_biology.jpg");
       }
 
       &.double-height {
@@ -395,7 +395,7 @@
       .card-header {
         position: relative;
         height: 100px;
-        background-image: url("./assets/imagenes/image_background_card_team_1.jpg");
+        background-image: url("../imagenes/image_background_card_team_1.jpg");
         background-size: cover;
         background-position: bottom;
         border: none;
@@ -436,7 +436,7 @@
   padding: 2rem 0;
   .video-container {
     padding: 1rem 0;
-    background-image: url("./assets/imagenes/video-background.jpg");
+    background-image: url("../imagenes/video-background.jpg");
     position: relative;
     z-index: 1;
     &::before {

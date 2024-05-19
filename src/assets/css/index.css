@@ -282,7 +282,7 @@
 
 .benefits {
   padding: 3rem 0;
-  background-image: url("./assets/imagenes/background_benefits.jpg");
+  background-image: url("../imagenes/background_benefits.jpg");
   position: relative;
 }
 .benefits::before {
@@ -355,22 +355,22 @@
   background-size: 120%;
 }
 .careers .careers-section .career.career-1 {
-  background-image: url("./assets/imagenes/image_category_administration.jpg");
+  background-image: url("../imagenes/image_category_administration.jpg");
 }
 .careers .careers-section .career.career-2 {
-  background-image: url("./assets/imagenes/image_category_accounting.jpg");
+  background-image: url("../imagenes/image_category_accounting.jpg");
 }
 .careers .careers-section .career.career-3 {
-  background-image: url("./assets/imagenes/image_category_architecture.jpg");
+  background-image: url("../imagenes/image_category_architecture.jpg");
 }
 .careers .careers-section .career.career-4 {
-  background-image: url("./assets/imagenes/image_category_mathematics.jpg");
+  background-image: url("../imagenes/image_category_mathematics.jpg");
 }
 .careers .careers-section .career.career-5 {
-  background-image: url("./assets/imagenes/image_category_programming.jpg");
+  background-image: url("../imagenes/image_category_programming.jpg");
 }
 .careers .careers-section .career.career-6 {
-  background-image: url("./assets/imagenes/image_category_biology.jpg");
+  background-image: url("../imagenes/image_category_biology.jpg");
 }
 @media screen and (min-width: 769px) {
   .careers .careers-section .career.double-height {
@@ -400,7 +400,7 @@
 .our-team .team-carousel .card .card-header {
   position: relative;
   height: 100px;
-  background-image: url("./assets/imagenes/image_background_card_team_1.jpg");
+  background-image: url("../imagenes/image_background_card_team_1.jpg");
   background-size: cover;
   background-position: bottom;
   border: none;
@@ -438,7 +438,7 @@
 }
 #video .video-container {
   padding: 1rem 0;
-  background-image: url("./assets/imagenes/video-background.jpg");
+  background-image: url("../imagenes/video-background.jpg");
   position: relative;
   z-index: 1;
 }
