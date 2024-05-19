@@ -277,6 +277,8 @@
 .benefits {
   padding: 3rem 0;
   background-image: url("../imagenes/background_benefits.jpg");
+  background-size: cover;
+  background-position: center;
   position: relative;
   &::before {
     content: "";
