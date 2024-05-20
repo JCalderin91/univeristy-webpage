@@ -20,7 +20,7 @@ $(document).ready(function () {
       },
     },
   });
-  $(".owl-carousel.testimonial-videos").owlCarousel({
+  const owlTestimonial = $(".owl-carousel.testimonial-videos").owlCarousel({
     loop: true,
     autoplay: true,
     nav: false,
@@ -41,6 +41,31 @@ $(document).ready(function () {
         $("#header").removeClass("dark");
       }
     }
+  });
+
+  owlTestimonial.on("changed.owl.carousel", function (event) {
+    $(".testimonial__image").css("display", "block");
+    $(".testimonial__video").css("display", "none");
+    $(".testimonial__button").each(function () {
+      $(this).css("display", "block");
+    });
+    $(".testimonial__video").each(function () {
+      this.pause();
+    });
+  });
+
+  $(".testimonial__button").click((ev) => {
+    $(".owl-carousel.testimonial-videos").trigger("stop.owl.autoplay");
+    const target = $(ev.currentTarget).attr("data-value");
+    const $target = $(`[data-target="${target}"]`);
+    $($target).find(".testimonial__image").css("display", "none");
+    $($target).find(".testimonial__video").css("display", "block");
+    $($target)
+      .find(".testimonial__video")
+      .each(function () {
+        this.play();
+      });
+    $(".testimonial__button").css("display", "none");
   });
 });
 
