@@ -30,6 +30,11 @@
   transition: 0.3s background-color ease-in-out, 0.3s color ease-in-out;
   #navbarSupportedContent {
     text-align: center;
+    ul {
+      li {
+        margin-left: 2rem;
+      }
+    }
   }
   &.dark {
     background-color: var(--primaryColor);
@@ -139,7 +144,7 @@
       color: var(--lightColor);
     }
     .line {
-      width: 130px;
+      width: 200px;
       height: 2px;
       background-color: var(--secondaryColor);
       margin: 0.5rem 0;
@@ -484,6 +489,9 @@
       text-transform: uppercase;
       font-weight: bold;
       font-size: 2.5rem;
+      @media only screen and (min-width: 769px) {
+        max-width: 400px;
+      }
     }
   }
   .testimonial-videos {
@@ -494,7 +502,7 @@
     .testimonial {
       position: relative;
       height: 300px;
-      width: 300px;
+      width: 350px;
       max-width: 100%;
       margin: 0 auto;
       &__image {
@@ -508,13 +516,13 @@
       &__title {
         position: absolute;
         left: 50%;
-        top: calc(100% - 30px);
+        top: calc(100% - 20px);
         transform: translateX(-50%);
         max-width: 95%;
         background-color: var(--lightColor);
         color: var(--buttonHoverColor);
         width: 300px;
-        padding: 1rem;
+        padding: 0.5rem 1rem;
         border-radius: 0.4rem;
         font-weight: 800;
         font-size: 1.2rem;
