@@ -182,7 +182,7 @@
       <div class="container hero-container pt-5 mt-md-0">
         <div class="row pt-5 mt-md-0">
           <div
-            class="col-md-6 d-flex flex-column justify-content-center text-white pt-5 mt-md-0 text-center text-md-left"
+            class="col-md-7 d-flex flex-column justify-content-center text-white pt-5 mt-md-0 text-center text-md-left"
           >
             <h3 class="title">Welcome a the University</h3>
             <div class="line"></div>
@@ -193,15 +193,17 @@
               <button class="btn btn-custom px-5">Get Now</button>
             </div>
           </div>
-          <div class="col-md-6 form-col d-flex align-items-center px-0 px-md-5">
+          <div
+            class="col-md-5 form-col d-flex justify-content-end align-items-center"
+          >
             <div class="card register-form mx-2">
               <div class="card-header text-center">
                 <h3>Register Now !</h3>
               </div>
-              <div class="card-body">
-                <div class="row mb-2">
+              <div class="card-body pt-5">
+                <div class="row mb-3">
                   <div class="col-12">
-                    <div class="mb-3">
+                    <div class="mb-4">
                       <input
                         type="text"
                         class="form-control"
@@ -211,7 +213,7 @@
                     </div>
                   </div>
                   <div class="col-6 pr-1">
-                    <div class="mb-3">
+                    <div class="mb-4">
                       <input
                         type="email"
                         class="form-control"
@@ -221,7 +223,7 @@
                     </div>
                   </div>
                   <div class="col-6 pl-1">
-                    <div class="mb-3">
+                    <div class="mb-4">
                       <input
                         type="text"
                         class="form-control"
@@ -231,7 +233,7 @@
                     </div>
                   </div>
                   <div class="col-12">
-                    <div class="mb-3">
+                    <div class="mb-4">
                       <input
                         type="text"
                         class="form-control"
@@ -241,7 +243,7 @@
                     </div>
                   </div>
                   <div class="col-12">
-                    <div class="mb-3">
+                    <div class="mb-4">
                       <textarea
                         class="form-control"
                         id="message"
@@ -251,8 +253,9 @@
                     </div>
                   </div>
                 </div>
-
-                <button class="btn btn-custom px-5">Send</button>
+                <div class="text-center text-md-left">
+                  <button class="btn btn-custom px-5 mb-4">Send</button>
+                </div>
               </div>
             </div>
           </div>
@@ -357,24 +360,27 @@
                 <h3 class="title">About Us</h3>
                 <h4 class="subtitle">Know everything we do for you</h4>
               </div>
-              <p>
+              <p class="text-center text-md-left">
                 The university is a physical place, building, laboratories,
                 libraries... where students and teachers meet. The university is
                 also a human-social system, that is, a set of elements that are
                 related and interact with each other.
               </p>
-              <div class="text-center text-md-left">
+              <div class="text-center text-md-left d-none d-md-block">
                 <button class="btn btn-custom px-5 mt-4">Read More</button>
               </div>
             </div>
             <div
-              class="col-md-6 about-us-image-container pt-4 pt-md-0 justify-content-center justify-content-md-start"
+              class="col-md-6 about-us-image-container pt-4 pt-md-0 flex-column align-items-center justify-content-center"
             >
               <div class="about-us-image">
                 <img
                   src="assets/imagenes/image_about_us.jpg"
                   alt="About us image"
                 />
+              </div>
+              <div class="text-center text-md-left d-md-none mt-4">
+                <button class="btn btn-custom px-5 mt-4">Read More</button>
               </div>
             </div>
           </div>
@@ -383,7 +389,7 @@
       <section class="benefits">
         <div class="container benefits-container">
           <div class="row">
-            <div class="col-12 col-sm-6 col-md-3 mb-4">
+            <div class="col-6 col-md-3 mb-4">
               <div class="benefit">
                 <div class="benefit__image">
                   <img
@@ -394,7 +400,7 @@
                 <h5 class="benefit__text">Excellent Content</h5>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-3 mb-4">
+            <div class="col-6 col-md-3 mb-4">
               <div class="benefit">
                 <div class="benefit__image">
                   <img
@@ -405,7 +411,7 @@
                 <h5 class="benefit__text">Excellent Instructors</h5>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-3 mb-4">
+            <div class="col-6 col-md-3 mb-4">
               <div class="benefit">
                 <div class="benefit__image">
                   <img
@@ -416,7 +422,7 @@
                 <h5 class="benefit__text">The Best Professionals</h5>
               </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-3 mb-4">
+            <div class="col-6 col-md-3 mb-4">
               <div class="benefit">
                 <div class="benefit__image">
                   <img
@@ -693,11 +699,6 @@
               </div>
             </div>
           </div>
-          <!-- <video
-              src="./assets/videos/review-1.mp4"
-              class="d-none"
-              autoplay="false"
-            ></video> -->
         </div>
       </section>
     </main>
@@ -830,7 +831,7 @@
             </div>
           </div>
           <div class="col-md-3 text-center text-md-left pt-4 pt-md-0">
-            <h5 class="title-section pl-0 mb-0">NewsLetter</h5>
+            <h5 class="title-section newsletter">NewsLetter</h5>
             <p class="text-white">
               Receive all out promotions and notifications
             </p>
@@ -860,9 +861,9 @@
             </p>
           </div>
           <div
-            class="col-12 col-md-6 text-right text-center text-md-center pt-3 pt-md-0"
+            class="col-12 col-md-6 text-right text-center text-md-right pt-3 pt-md-0"
           >
-            <a href="https://josesilvera.com">
+            <a href="https://josesilvera.com" target="_blank">
               <img
                 src="./assets/imagenes/logo_silvera_enterprises.png"
                 height="50"

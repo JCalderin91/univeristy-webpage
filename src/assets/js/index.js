@@ -24,7 +24,6 @@ $(document).ready(function () {
     loop: true,
     autoplay: true,
     nav: false,
-    margin: 10,
     center: true,
     dots: true,
     responsive: {
@@ -33,16 +32,30 @@ $(document).ready(function () {
       },
     },
   });
+
+  $(".navbar-toggler").click(() => {
+    if (!$("#header").hasClass("dark")) {
+      $("#header").addClass("dark");
+    } else {
+      if (!$("#header").hasClass("scroll")) {
+        $("#header").removeClass("dark");
+      }
+    }
+  });
 });
 
 // Navbar dynamic color functionality
-const $header = document.querySelector("#header");
+const $header = $("#header");
 function callback(entries, observer) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      $header.classList.remove("dark");
+      if (!$("#navbarSupportedContent").hasClass("show")) {
+        $header.removeClass("dark");
+      }
+      $header.removeClass("scroll");
     } else {
-      $header.classList.add("dark");
+      $header.addClass("dark");
+      $header.addClass("scroll");
     }
   });
 }
