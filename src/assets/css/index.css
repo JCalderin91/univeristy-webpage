@@ -110,7 +110,7 @@
 }
 
 .hero {
-  min-height: 80vh;
+  min-height: 90vh;
   position: relative;
   z-index: 1;
   padding-top: 2rem;
@@ -137,14 +137,15 @@
 .hero .hero-container {
   position: relative;
   z-index: 2;
-  min-height: calc(80vh - 2rem);
+  min-height: calc(90vh - 2rem);
 }
 .hero .hero-container .form-col {
-  min-height: calc(80vh - 2rem);
+  min-height: calc(90vh - 2rem);
 }
 .hero .hero-container .title {
   font-size: 1.8rem;
   color: var(--lightColor);
+  padding-top: 2.8rem;
 }
 .hero .hero-container .line {
   width: 200px;
@@ -558,6 +559,11 @@
   transition: 0.3s transform ease-in-out;
   opacity: 0;
 }
+@media (pointer: coarse) {
+  #video .testimonial-videos .testimonial__button {
+    opacity: 1;
+  }
+}
 #video .testimonial-videos .testimonial__button svg {
   transform: translateX(5px);
 }
@@ -720,7 +726,6 @@ html {
 
 .header-section {
   margin-bottom: 3.5rem;
-  margin-left: 1rem;
 }
 @media only screen and (max-width: 768px) {
   .header-section {

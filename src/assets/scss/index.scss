@@ -109,7 +109,7 @@
   }
 }
 .hero {
-  min-height: 80vh;
+  min-height: 90vh;
   position: relative;
   z-index: 1;
   padding-top: 2rem;
@@ -135,13 +135,14 @@
   .hero-container {
     position: relative;
     z-index: 2;
-    min-height: calc(80vh - 2rem);
+    min-height: calc(90vh - 2rem);
     .form-col {
-      min-height: calc(80vh - 2rem);
+      min-height: calc(90vh - 2rem);
     }
     .title {
       font-size: 1.8rem;
       color: var(--lightColor);
+      padding-top: 2.8rem;
     }
     .line {
       width: 200px;
@@ -556,6 +557,9 @@
         border-radius: 50%;
         transition: 0.3s transform ease-in-out;
         opacity: 0;
+        @media (pointer: coarse) {
+          opacity: 1;
+        }
         svg {
           transform: translateX(5px);
         }
@@ -724,7 +728,6 @@ html {
 
 .header-section {
   margin-bottom: 3.5rem;
-  margin-left: 1rem;
   @media only screen and (max-width: 768px) {
     text-align: center;
   }
